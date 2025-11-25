@@ -1,0 +1,70 @@
+# ============================
+# Python cache / compiled files
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ============================
+# VS Code / Editor files
+# ============================
+.vscode/
+tempCodeRunnerFile.py
+
+# ============================
+# OS / System files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Generated visualization outputs
+# ============================
+*.mp4
+*.gif
+*.avi
+*.png
+*.jpg
+
+# Timestamped result folders
+results/
+*/results/
+**/results/
+
+# ============================
+# MMAUD / MultiVAE dataset exports
+# ============================
+*.csv
+*.json
+*.npy
+*.npz
+
+# Avoid committing raw data from Calibration Data or MAVIC2
+# (comment these out if you DO want to commit data)
+Calibration Data/
+MAVIC2/lidar_360/
+MAVIC2/ground_truth/
+MAVIC2/livox_avia/
+MAVIC2/radar_enhance_pcl/
+
+# ============================
+# Python virtual environments
+# ============================
+env/
+venv/
+.mmenv/
+.venv/
+
+# ============================
+# Logs
+# ============================
+*.log
+*.bak
+
+# ============================
+# IDE backup/swap files
+# ============================
+*~
+*.swp
+*.swo
