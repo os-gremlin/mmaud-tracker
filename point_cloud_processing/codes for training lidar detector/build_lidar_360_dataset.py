@@ -4,8 +4,8 @@ from dataset_loader import extract_timestamp, read_lidar_files
 from extract_feature import find_gt, extract_feature_set
 from sklearn.cluster import DBSCAN
 
-dataset_folder = "/media/yi/KESU/anti_uav/val"
-result_folder = "/media/yi/KESU/anti_uav/result"
+dataset_folder = r"C:/swarm/MMOAD/Calibration Data/train"
+result_folder = r"C:/swarm/MMOAD/Calibration Data/results"
 save_directory =  os.path.join(result_folder, "lidar_360_feature_set")
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
@@ -19,7 +19,7 @@ for seq_folder in os.listdir(dataset_folder):
     seq_folder_path = os.path.join(dataset_folder, seq_folder)
 
     # initial state
-    gt_directory = os.path.join(seq_folder_path, "gt")
+    gt_directory = os.path.join(seq_folder_path, "ground_truth")
     gt_data = read_lidar_files(gt_directory)
 
     lidar_360_directory = os.path.join(seq_folder_path, "lidar_360")
